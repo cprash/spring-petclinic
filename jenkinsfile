@@ -4,21 +4,25 @@ agent any
 stages{
 	stage('Git Checkout') {
 		steps{
-		git branch 'main', url 'httpsgithub.comfrusteeespring-petclinic.git'
+		echo 'Checking out!!!'
+		git 'httpsgithub.comfrusteeespring-petclinic.git'
 		}
 	}
 	stage('Set Maven Env') {
+		echo 'Setiing up Maven'
 		steps{
 		env.PATH = Capache-maven-3.8.5bin;cWindowsSystem32
 		}
 	}
-	stage('Clean Test Package') {
+	stage('Clean Package') {
 		steps{
+		echo 'Packaging Jar!!!'
 		bat 'mvn clean package'
 		}
 	}
 	stage('Archive Jar') {
 		steps{
+		echo 'Archiving Jar'
 		archive 'target.jar'
 		}
 	}
