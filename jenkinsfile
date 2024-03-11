@@ -9,8 +9,8 @@ stages{
 		}
 	}
 	stage('Set Maven Env') {
-		echo 'Setiing up Maven'
 		steps{
+		echo 'Setiing up Maven'
 		script{
 		env.PATH = 'C:/apache-maven-3.8.5/bin;c:\\Windows\\System32'
 		}
