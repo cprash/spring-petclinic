@@ -27,7 +27,7 @@ stages{
 		steps{
 		echo 'Archiving Jar'
 		script{
-		archive 'target.jar'
+		archiveArtifacts 'target/*.jar'
 		}
 		}
 	}
