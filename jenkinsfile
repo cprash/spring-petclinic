@@ -11,7 +11,9 @@ stages{
 	stage('Set Maven Env') {
 		echo 'Setiing up Maven'
 		steps{
+		script{
 		env.PATH = Capache-maven-3.8.5bin;cWindowsSystem32
+		}
 		}
 	}
 	stage('Clean Package') {
