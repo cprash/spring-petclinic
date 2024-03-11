@@ -5,7 +5,7 @@ stages{
 	stage('Git Checkout') {
 		steps{
 		echo 'Checking out!!!'
-		git 'https://github.comfrusteeespring-petclinic.git'
+		git 'https://github.com/frusteee/spring-petclinic.git'
 		}
 	}
 	stage('Set Maven Env') {
