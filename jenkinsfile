@@ -33,4 +33,10 @@ stages{
 	}
 
 	}
+	post{
+	always{
+	script{
+	junit stdioRetention: '', testResults: 'target/surefire-reports/*.xml'	
+	}
+	}}
 	}
