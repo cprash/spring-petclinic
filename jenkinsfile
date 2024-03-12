@@ -37,7 +37,7 @@ stages{
 	always{
 	script{
 	junit stdioRetention: '', testResults: 'target/surefire-reports/*.xml'
-	emailext body: 'Build Successful', subject: 'petClinic_ScriptedPipeline', to: 'jenkins21291@gmail.com'
+	emailext body: 'Build Successful', subject: 'petClinic_DeclaritivePipeline', to: 'jenkins21291@gmail.com'
 	}
 	}}
 	}
